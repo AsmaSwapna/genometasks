@@ -30,7 +30,7 @@ quicktest:
 coverage:
 
 pytest: deps-dev
-	PYTHONS="$(PYTHONS)" PYTHON_MINORS="$(PYTHON_MINORS)" "$(SCRIPTS_DIR)/testall.sh"
+	PYTHONS="$(PYTHONS)" PYTHON_MINORS="$(PYTHON_MINORS)" "$(SCRIPTS_DIR)/run.sh"
 
 clean: clean-build clean-eggs clean-temps
 

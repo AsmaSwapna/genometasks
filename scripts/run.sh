@@ -11,5 +11,4 @@ function testWithPython() {
     python "$base_dir/setup.py" test || exit 1
 }
 export -f testWithPython
-parallel testWithPython ::: $PYTHONS
     
