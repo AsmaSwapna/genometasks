@@ -4,7 +4,7 @@ import re
 import numpy as np
 import math
 
-# Bruteforce method to find the overlaps
+# Naive method to find the overlap counts
 # Improvement can be made in the algorithm
 def overlap(a,b, count):
     score = 0
@@ -21,6 +21,7 @@ def overlap(a,b, count):
 def read_files(filestoprocess): 
     assert filestoprocess
     k = 1
+    # Bruteforce algorithm to find the overlaping regions, this can be improved
     for input in filestoprocess:
         print("Processing %s" % input)
         with open(input,'r') as afile:
@@ -44,7 +45,6 @@ if __name__ == '__main__':
     # y = [[0,1],[1,5]]
     xlength = len(x)
     ylength = len(y)
-    print(x)
     count = 1
     for idx in range(xlength):
         for idy in range(ylength):
